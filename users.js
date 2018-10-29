@@ -17,7 +17,7 @@ for (var i = 0; i <= usersByDay.length - 1; i++) {
 
 
 
-// Рассчитываем среднее значение посещаемости
+// Calculate average attendance посещаемости
 var averageUsers = totalUsers / usersByDay.length;
 console.log('Средняя посещаемость: ' + averageUsers);
 
