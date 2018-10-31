@@ -8,14 +8,13 @@ keks.plot(usersByDay, expectedUsers);
 // Summarize attendance
 var totalUsers = 0;
 var minUsers = expectedUsers - 100;
+
 for (var i = 0; i <= usersByDay.length - 1; i++) {
   totalUsers += usersByDay[i];
   if (usersByDay[i] < minUsers) {
     console.log (usersByDay[i]) // need to remove
-    }
+  }
 }
-
-
 
 // Calculate average attendance посещаемости
 var averageUsers = totalUsers / usersByDay.length;
