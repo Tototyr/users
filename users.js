@@ -21,8 +21,6 @@ for (var i = 0; i <= usersByDay.length - 1; i++) {
 var averageUsers = totalUsers / usersByDay.length;
 console.log('Средняя посещаемость: ' + averageUsers);
 
-if (averageUsers > expectedUsers) {
-  console.log('Посещаемость великолепна. Продолжай в том же духе!');
-} else {
-  console.log('Посещаемость так себе. Нужно поднапрячься!');
-}
+(averageUsers > expectedUsers)
+  ? alert('Attendance is great. Keep up the good work!')
+  : alert('Attendance is so-so. You need to stretch!');
